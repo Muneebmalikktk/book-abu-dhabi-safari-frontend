@@ -102,15 +102,24 @@ export default function SafariCard({ packageData }) {
           ))}
         </ul>
 
-        <Link
-          to={detailUrl}
-          className="mt-7 flex w-full items-center justify-center border border-foreground bg-foreground px-4 py-3 text-sm font-medium text-background transition-colors hover:bg-primary hover:text-primary-foreground"
-        >
-          View Package Details{" "}
-          <span className="ml-2" aria-hidden="true">
-            →
-          </span>
-        </Link>
+        <div className="mt-7 flex gap-3">
+          <Link
+            to={detailUrl}
+            className="flex min-w-0 flex-1 items-center justify-center border border-foreground bg-foreground px-3 py-3 text-center text-sm font-medium text-background transition-colors hover:bg-primary hover:text-primary-foreground"
+          >
+            View Details
+            <span className="ml-2 shrink-0" aria-hidden="true">
+              →
+            </span>
+          </Link>
+
+          <Link
+            to="/book"
+            className="flex min-w-0 flex-1 items-center justify-center border border-foreground px-3 py-3 text-center text-sm font-medium text-foreground transition-colors hover:bg-foreground hover:text-background"
+          >
+            Book Now
+          </Link>
+        </div>
 
         <a
           href={packageWhatsappHref(title)}
