@@ -1,7 +1,7 @@
 export const COMPANY_NAME = "Book Abu Dhabi Safari";
 export const SITE_URL = "https://bookabudhabisafari.com";
 // Temporary contact details. Replace these two values before launch.
-export const WHATSAPP_NUMBER = "+971 55 481 6616";
+export const WHATSAPP_NUMBER = "971554816616";
 export const PHONE = "+971 55 481 6616";
 export const EMAIL = "bookings@bookabudhabisafari.com";
 export const INSTAGRAM_URL = "https://www.instagram.com/abudhabidesertsafari_";

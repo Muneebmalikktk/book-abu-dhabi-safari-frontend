@@ -32,7 +32,7 @@ export default function BookPage() {
     <div className="bg-background">
       <Helmet>
         <title>
-          Book Abu Dhabi Desert Safari | true desert Tourism Abu Dhabi
+          Book Abu Dhabi Desert Safari | Book Abu Dhabi Safari
         </title>
         <meta
           name="description"

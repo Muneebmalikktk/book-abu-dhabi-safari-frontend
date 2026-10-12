@@ -1,3 +1,4 @@
+import { API_BASE_URL } from "../../lib/api.js";
 import { useState } from "react";
 import { trackEvent } from "../../lib/site";
 
@@ -114,7 +115,7 @@ export default function ReviewForm({ onPosted }) {
 
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_API_URL}/api/reviews`,
+        `${API_BASE_URL}/api/reviews`,
         {
           method: "POST",
           headers: {

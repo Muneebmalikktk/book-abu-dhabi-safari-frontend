@@ -1,3 +1,4 @@
+import { API_BASE_URL } from "../lib/api.js";
 import { useEffect, useState } from "react";
 
 import Navbar from "../components/Navbar.jsx";
@@ -7,7 +8,7 @@ import WhatsAppButton from "../components/WhatsAppButton";
 import ReviewCard from "../components/reviews/ReviewCard.jsx";
 import ReviewForm from "../components/reviews/ReviewForm.jsx";
 import { Helmet } from "react-helmet-async";
-import { sampleReviews } from "../data/reviews.js";
+
 
 const title = "Guest Reviews | Book Abu Dhabi Safari Abu Dhabi Desert Safari";
 const description =
@@ -22,7 +23,7 @@ export default function ReviewsPage() {
     async function fetchReviews() {
       try {
         const response = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/reviews`,
+          `${API_BASE_URL}/api/reviews`,
         );
 
         const data = await response.json();
@@ -42,8 +43,8 @@ export default function ReviewsPage() {
         setReviews(formattedReviews);
       } catch (error) {
         console.error("Reviews could not be loaded:", error);
-        setReviews(sampleReviews);
-        setError("");
+        setReviews([]);
+        setError("Reviews are temporarily unavailable. Please try again later.");
       } finally {
         setLoading(false);
       }

@@ -1,3 +1,4 @@
+import { API_BASE_URL } from "../../lib/api.js";
 import { useEffect, useState } from "react";
 import AdminLayout from "../../components/admin/AdminLayout";
 import BookingTable from "../../components/admin/BookingTable.jsx";
@@ -28,7 +29,7 @@ export default function AdminBookings() {
     async function fetchBookings() {
       try {
         const response = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/admin/bookings`,
+          `${API_BASE_URL}/api/admin/bookings`,
           {
             credentials: "include",
           }
@@ -74,7 +75,7 @@ export default function AdminBookings() {
       setError("");
 
       const response = await fetch(
-        `${import.meta.env.VITE_API_URL}/api/admin/bookings/${bookingId}/status`,
+        `${API_BASE_URL}/api/admin/bookings/${bookingId}/status`,
         {
           method: "PATCH",
           headers: {

@@ -1,3 +1,4 @@
+import { API_BASE_URL } from "../../lib/api.js";
 import { useEffect, useState } from "react";
 import AdminLayout from "../../components/admin/AdminLayout.jsx";
 import ReviewTable from "../../components/admin/ReviewTable.jsx";
@@ -27,7 +28,7 @@ export default function AdminReviews() {
     async function fetchReviews() {
       try {
         const response = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/admin/reviews`,
+          `${API_BASE_URL}/api/admin/reviews`,
           {
             credentials: "include",
           }
@@ -69,7 +70,7 @@ export default function AdminReviews() {
       setError("");
 
       const response = await fetch(
-        `${import.meta.env.VITE_API_URL}/api/admin/reviews/${reviewId}/status`,
+        `${API_BASE_URL}/api/admin/reviews/${reviewId}/status`,
         {
           method: "PATCH",
           headers: {

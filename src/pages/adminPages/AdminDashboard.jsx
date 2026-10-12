@@ -1,3 +1,4 @@
+import { API_BASE_URL } from "../../lib/api.js";
 import AdminLayout from "../../components/admin/AdminLayout.jsx";
 import StatCard from "../../components/admin/StatCard.jsx";
 import { useEffect, useState } from "react";
@@ -14,10 +15,10 @@ export default function AdminDashboard() {
     async function fetchDashboardData() {
       try {
         const [bookingsResponse, reviewsResponse] = await Promise.all([
-          fetch(`${import.meta.env.VITE_API_URL}/api/admin/bookings`, {
+          fetch(`${API_BASE_URL}/api/admin/bookings`, {
             credentials: "include",
           }),
-          fetch(`${import.meta.env.VITE_API_URL}/api/admin/reviews`, {
+          fetch(`${API_BASE_URL}/api/admin/reviews`, {
             credentials: "include",
           }),
         ]);

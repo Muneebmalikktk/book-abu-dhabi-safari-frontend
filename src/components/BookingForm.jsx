@@ -1,3 +1,4 @@
+import { API_BASE_URL } from "../lib/api.js";
 import { useRef, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router";
 import Reveal from "./Reveal";
@@ -46,7 +47,7 @@ export default function BookingForm({ showBackHome = false }) {
 
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_API_URL}/api/bookings`,
+        `${API_BASE_URL}/api/bookings`,
         {
           method: "POST",
           headers: {

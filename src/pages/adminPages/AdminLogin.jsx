@@ -1,3 +1,4 @@
+import { API_BASE_URL } from "../../lib/api.js";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 
@@ -29,7 +30,7 @@ export default function AdminLogin() {
 
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_API_URL}/api/admin/login`,
+        `${API_BASE_URL}/api/admin/login`,
         {
           method: "POST",
           headers: {

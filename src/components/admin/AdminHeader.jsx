@@ -1,3 +1,4 @@
+import { API_BASE_URL } from "../../lib/api.js";
 import { useState } from "react";
 import { ChevronDown, LogOut, Menu, UserRound } from "lucide-react";
 import { useNavigate } from "react-router";
@@ -8,7 +9,7 @@ export default function AdminHeader({ title, onMenuOpen }) {
 
   async function handleLogout() {
     try {
-      await fetch(`${import.meta.env.VITE_API_URL}/api/admin/logout`, {
+      await fetch(`${API_BASE_URL}/api/admin/logout`, {
         method: "POST",
         credentials: "include",
       });

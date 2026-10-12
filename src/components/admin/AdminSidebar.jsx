@@ -1,3 +1,4 @@
+import { API_BASE_URL } from "../../lib/api.js";
 import { useNavigate, useLocation, Link } from "react-router";
 import {
   CalendarDays,
@@ -21,7 +22,7 @@ export default function AdminSidebar({ open, onClose }) {
 
   async function handleLogout() {
     try {
-      await fetch(`${import.meta.env.VITE_API_URL}/api/admin/logout`, {
+      await fetch(`${API_BASE_URL}/api/admin/logout`, {
         method: "POST",
         credentials: "include",
       });
