@@ -5,7 +5,7 @@ import Footer from "../components/Footer.jsx";
 import WhatsAppButton from "../components/WhatsAppButton.jsx";
 import { safariPackages } from "../data/safariPackages.js";
 import { WHATSAPP_NUMBER } from "../lib/site.js";
-
+import { BUTTON_TEXT } from "../constants/uiText.js";
 function CheckIcon() {
   return (
     <svg
@@ -170,7 +170,7 @@ export default function PackageDetail() {
                 to={bookingUrl}
                 className="mt-7 flex w-full items-center justify-center bg-foreground px-6 py-4 text-[0.75rem] tracking-[0.18em] text-background uppercase transition-colors hover:bg-primary hover:text-primary-foreground"
               >
-                book now
+                {BUTTON_TEXT.BOOK_NOW}
               </Link>
               <a
                 href={packageWhatsApp}

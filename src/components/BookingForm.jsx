@@ -6,6 +6,7 @@ import { trackEvent } from "../lib/site";
 import { safariPackage } from "../data/formSeletionData.js";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
+import { BUTTON_TEXT } from "../constants/uiText.js";
 
 const FIELD =
   "w-full border-b border-border bg-transparent py-3 text-[0.95rem] text-foreground outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-primary";
@@ -277,7 +278,7 @@ export default function BookingForm({ showBackHome = false }) {
                   disabled={submitting}
                   className="w-full bg-foreground px-9 py-4 text-[0.75rem] tracking-[0.18em] text-background uppercase transition-colors hover:bg-primary hover:text-primary-foreground disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto"
                 >
-                  {submitting ? "Sending Request…" : "Request Availability"}
+                 {submitting ? "Sending Request…" : BUTTON_TEXT.BOOK_NOW}
                 </button>
               </div>
             </form>
