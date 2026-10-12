@@ -72,10 +72,10 @@ export default function SafariCard({ packageData }) {
           {prices.map((price) => (
             <span
               key={price.label}
-              className="rounded-sm bg-foreground/85 px-3 py-2 text-[0.7rem] tracking-[0.14em] text-background uppercase backdrop-blur-sm"
+              className="rounded-sm bg-foreground/85 px-3 py-2 text-[0.7rem] tracking-[0.14em] text-accent uppercase backdrop-blur-sm"
             >
               {price.label}{" "}
-              <span className="ml-1 font-medium text-accent">
+              <span className="ml-1 font-medium text-background">
                 {price.amount}
               </span>
             </span>

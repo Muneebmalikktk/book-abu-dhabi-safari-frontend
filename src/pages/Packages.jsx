@@ -46,10 +46,8 @@ export default function PackagesPage() {
             ))}
           </div>
         </section>
-
         <WhatsAppButton />
       </main>
-
       <Footer />
     </div>
   );
