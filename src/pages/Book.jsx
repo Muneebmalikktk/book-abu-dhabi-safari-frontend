@@ -47,8 +47,8 @@ export default function BookPage() {
         {/* Page hero */}
         <PageHero
           eyebrow="Plan Your Desert Experience"
-          title="Book your Abu Dhabi desert safari"
-          description="Tell us your preferred date, package and group size. Our team will confirm availability and help arrange the rest."
+          title="Book your safari"
+          description="Share your date, package, and group size."
           compact={true}
         />
 

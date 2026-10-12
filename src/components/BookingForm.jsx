@@ -47,24 +47,21 @@ export default function BookingForm({ showBackHome = false }) {
     );
 
     try {
-      const response = await fetch(
-        `${API_BASE_URL}/api/bookings`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            name: data.name,
-            phone: phone,
-            email: data.email,
-            package: data.package,
-            date: data.date,
-            guests: Number(data.guests),
-            message: data.message,
-          }),
+      const response = await fetch(`${API_BASE_URL}/api/bookings`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-      );
+        body: JSON.stringify({
+          name: data.name,
+          phone: phone,
+          email: data.email,
+          package: data.package,
+          date: data.date,
+          guests: Number(data.guests),
+          message: data.message,
+        }),
+      });
 
       const result = await response.json().catch(() => ({}));
 
@@ -102,20 +99,7 @@ export default function BookingForm({ showBackHome = false }) {
       id="booking"
       className="px-5 py-20 sm:px-8 sm:py-28 lg:px-12 lg:py-36"
     >
-      <div className="mx-auto grid max-w-[1400px] gap-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-14">
-        <Reveal>
-          <p className="eyebrow text-primary">Plan Your Desert Experience</p>
-
-          <h2 className="mt-6 text-[clamp(2rem,5.2vw,3.5rem)] leading-[1.05]">
-            Ready to discover the desert?
-          </h2>
-
-          <p className="mt-7 max-w-md text-[1.02rem] leading-[1.85] font-light text-muted-foreground">
-            Tell us a little about your trip and our team will help you choose
-            the right experience.
-          </p>
-        </Reveal>
-
+      <div className="mx-auto max-w-[1100px]">
         <Reveal delay={120}>
           {submitted ? (
             <div
@@ -270,7 +254,7 @@ export default function BookingForm({ showBackHome = false }) {
                 </div>
               )}
 
-              <div className="sm:col-span-2">
+              <div className="sm:col-span-2 mt-[23px]">
                 <button
                   type="submit"
                   id="booking-submit"
@@ -278,7 +262,7 @@ export default function BookingForm({ showBackHome = false }) {
                   disabled={submitting}
                   className="w-full bg-foreground px-9 py-4 text-[0.75rem] tracking-[0.18em] text-background uppercase transition-colors hover:bg-primary hover:text-primary-foreground disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto"
                 >
-                 {submitting ? "Sending Request…" : BUTTON_TEXT.BOOK_NOW}
+                  {submitting ? "Sending Request…" : BUTTON_TEXT.BOOK_NOW}
                 </button>
               </div>
             </form>
