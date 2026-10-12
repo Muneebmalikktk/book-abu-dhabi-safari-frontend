@@ -1,4 +1,3 @@
-
 import SafariCard from "./SafariCard";
 import Reveal from "./Reveal";
 import { safariPackages } from "../data/safariPackages.js";

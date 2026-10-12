@@ -170,7 +170,7 @@ export default function PackageDetail() {
                 to={bookingUrl}
                 className="mt-7 flex w-full items-center justify-center bg-foreground px-6 py-4 text-[0.75rem] tracking-[0.18em] text-background uppercase transition-colors hover:bg-primary hover:text-primary-foreground"
               >
-                Request Availability
+                book now
               </Link>
               <a
                 href={packageWhatsApp}
