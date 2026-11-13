@@ -2,7 +2,7 @@ import { API_BASE_URL } from "../../lib/api.js";
 import AdminLayout from "../../components/admin/AdminLayout.jsx";
 import StatCard from "../../components/admin/StatCard.jsx";
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router";
 
 export default function AdminDashboard() {
   const [bookings, setBookings] = useState([]);
@@ -76,33 +76,41 @@ export default function AdminDashboard() {
       )}
 
       <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-        <StatCard
-          label="Total Bookings"
-          value={loading ? "..." : totalBookings}
-          change="All booking requests"
-          tone="default"
-        />
+        <Link to="/admin/bookings" className="block h-full rounded-sm transition-all duration-300 hover:-translate-y-1 hover:drop-shadow-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+          <StatCard
+            label="Total Bookings"
+            value={loading ? "..." : totalBookings}
+            change="All booking requests"
+            tone="default"
+          />
+        </Link>
 
-        <StatCard
-          label="New Bookings"
-          value={loading ? "..." : newBookings}
-          change="Awaiting attention"
-          tone="accent"
-        />
+        <Link to="/admin/bookings" className="block h-full rounded-sm transition-all duration-300 hover:-translate-y-1 hover:drop-shadow-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+          <StatCard
+            label="New Bookings"
+            value={loading ? "..." : newBookings}
+            change="Awaiting attention"
+            tone="accent"
+          />
+        </Link>
 
-        <StatCard
-          label="Confirmed"
-          value={loading ? "..." : confirmedBookings}
-          change="Confirmed bookings"
-          tone="success"
-        />
+        <Link to="/admin/bookings" className="block h-full rounded-sm transition-all duration-300 hover:-translate-y-1 hover:drop-shadow-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+          <StatCard
+            label="Confirmed"
+            value={loading ? "..." : confirmedBookings}
+            change="Confirmed bookings"
+            tone="success"
+          />
+        </Link>
 
-        <StatCard
-          label="Pending Reviews"
-          value={loading ? "..." : pendingReviews}
-          change="Waiting for approval"
-          tone="warning"
-        />
+        <Link to="/admin/reviews" className="block h-full rounded-sm transition-all duration-300 hover:-translate-y-1 hover:drop-shadow-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+          <StatCard
+            label="Pending Reviews"
+            value={loading ? "..." : pendingReviews}
+            change="Waiting for approval"
+            tone="warning"
+          />
+        </Link>
       </section>
     </AdminLayout>
   );
