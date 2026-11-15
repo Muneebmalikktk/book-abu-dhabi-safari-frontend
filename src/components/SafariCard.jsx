@@ -71,8 +71,8 @@ export default function SafariCard({ packageData }) {
         <div className="pointer-events-none absolute top-4 left-4 flex flex-wrap gap-2">
           {prices.map((price) => (
             <span
-              key={price.label}
-              className="rounded-sm bg-foreground/85 px-3 py-2 text-[0.7rem] tracking-[0.14em] text-accent uppercase backdrop-blur-sm"
+              key={price.label}className="rounded-sm bg-[#F5E6D3]/15 backdrop-blur-xl border border-white/20 px-3 py-2 text-[0.7rem] tracking-[0.14em] text-white uppercase shadow-lg"
+              
             >
               {price.label}{" "}
               <span className="ml-1 font-medium text-background">
