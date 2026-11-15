@@ -101,8 +101,8 @@ export default function Footer() {
               </li>
 
               <li>{ADDRESS}</li>
-
-              <li>
+{/* instagram <li> is temp removed*/}
+              {/* <li>
                 <a
                   href={INSTAGRAM_URL}
                   target="_blank"
@@ -117,7 +117,7 @@ export default function Footer() {
                 >
                   Instagram
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
