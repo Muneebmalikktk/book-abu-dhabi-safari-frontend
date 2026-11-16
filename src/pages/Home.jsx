@@ -16,7 +16,7 @@ const structuredData = {
   "@type": "TravelAgency",
   name: "Book Abu Dhabi Safari",
   url: "https://bookabudhabisafari.com/",
-  telephone: "+971 50 000 0000",
+  phone: "+971554136949",
   description:
     "Book Abu Dhabi Safari offers Abu Dhabi desert safari experiences, including evening, luxury, private and adventure desert tours.",
   areaServed: {
@@ -53,8 +53,8 @@ export default function Home() {
         <WhyChooseUs />
         <Testimonials />
         <BookingForm />
-        {/* <CallButton/>
-        <WhatsAppButton /> */}
+        <CallButton/>
+        <WhatsAppButton />
       </main>
 
       <Footer />
