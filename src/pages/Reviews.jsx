@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar.jsx";
 import PageHero from "../components/PageHero.jsx";
 import Footer from "../components/Footer.jsx";
 import WhatsAppButton from "../components/WhatsAppButton";
+import CallButton from "../components/CallButton"
 import ReviewCard from "../components/reviews/ReviewCard.jsx";
 import ReviewForm from "../components/reviews/ReviewForm.jsx";
 import { Helmet } from "react-helmet-async";
@@ -138,6 +139,7 @@ export default function ReviewsPage() {
           </div>
         </section>
 
+        <CallButton/>
         <WhatsAppButton />
       </main>
 

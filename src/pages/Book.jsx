@@ -4,6 +4,7 @@ import Footer from "../components/Footer.jsx";
 import BookingForm from "../components/BookingForm.jsx";
 import { useReveal } from "../hooks/useReveal.js";
 import WhatsAppButton from "../components/WhatsAppButton";
+import CallButton from "../components/CallButton"
 import { Helmet } from "react-helmet-async";
 import { whatsappHref } from "../lib/site.js";
 
@@ -104,10 +105,12 @@ export default function BookPage() {
           </div>
         </section>
 
+        <CallButton/>
         <WhatsAppButton />
       </main>
 
       <Footer />
+      
     </div>
   );
 }

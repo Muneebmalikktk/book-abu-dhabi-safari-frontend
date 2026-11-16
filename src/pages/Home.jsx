@@ -7,6 +7,7 @@ import WhyChooseUs from "../components/WhyChooseUs";
 import Testimonials from "../components/Testimonials";
 import BookingForm from "../components/BookingForm";
 import WhatsAppButton from "../components/WhatsAppButton";
+import CallButton from "../components/CallButton"
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet-async";
 
@@ -52,10 +53,12 @@ export default function Home() {
         <WhyChooseUs />
         <Testimonials />
         <BookingForm />
+        <CallButton/>
+        <WhatsAppButton />
       </main>
 
       <Footer />
-      <WhatsAppButton />
+      
     </div>
   );
 }

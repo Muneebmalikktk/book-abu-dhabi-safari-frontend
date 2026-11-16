@@ -5,6 +5,7 @@ import SafariCard from "../components/SafariCard.jsx";
 import Reveal from "../components/Reveal.jsx";
 import { safariPackages } from "../data/safariPackages.js";
 import WhatsAppButton from "../components/WhatsAppButton";
+import CallButton from "../components/CallButton"
 import { Helmet } from "react-helmet-async";
 
 export default function PackagesPage() {
@@ -46,6 +47,7 @@ export default function PackagesPage() {
             ))}
           </div>
         </section>
+        <CallButton/>
         <WhatsAppButton />
       </main>
       <Footer />

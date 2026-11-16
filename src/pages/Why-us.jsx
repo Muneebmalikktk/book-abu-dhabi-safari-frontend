@@ -3,6 +3,7 @@ import PageHero from "../components/PageHero.jsx";
 import Footer from "../components/Footer.jsx";
 import { Link } from "react-router";
 import WhatsAppButton from "../components/WhatsAppButton";
+import CallButton from "../components/CallButton"
 import { Helmet } from "react-helmet-async";
 
 const reasons = [
@@ -115,6 +116,7 @@ export default function WhyUsPage() {
           </div>
         </section>
 
+        <CallButton/>
         <WhatsAppButton />
       </main>
 

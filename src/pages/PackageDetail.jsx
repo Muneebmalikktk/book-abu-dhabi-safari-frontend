@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "../components/Navbar.jsx";
 import Footer from "../components/Footer.jsx";
 import WhatsAppButton from "../components/WhatsAppButton.jsx";
+import CallButton from "../components/CallButton"
 import { safariPackages } from "../data/safariPackages.js";
 import { WHATSAPP_NUMBER } from "../lib/site.js";
 import { BUTTON_TEXT } from "../constants/uiText.js";
@@ -187,9 +188,10 @@ export default function PackageDetail() {
             </aside>
           </div>
         </section>
+        <CallButton/>
+        <WhatsAppButton />
       </main>
       <Footer />
-      <WhatsAppButton />
     </div>
   );
 }
