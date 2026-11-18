@@ -67,15 +67,16 @@ export default function SafariCard({ packageData }) {
             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.035]"
           />
         </Link>
-
-        <div className="pointer-events-none absolute top-4 left-4 flex flex-wrap gap-2">
+        
+        {/* price tag */}
+        <div className="pointer-events-none absolute top-56 left-4 flex flex-wrap gap-2">
           {prices.map((price) => (
             <span
-              key={price.label}className="rounded-sm bg-[#F5E6D3]/15 backdrop-blur-xl border border-white/20 px-3 py-2 text-[0.7rem] tracking-[0.14em] text-white uppercase shadow-lg"
+              key={price.label}className="rounded-sm bg-background/92 backdrop-blur-xl border border-white/20 px-3 py-2 text-[0.7rem] tracking-[0.14em] text-black uppercase shadow-lg"
               
             >
               {price.label}{" "}
-              <span className="ml-1 font-medium text-background">
+              <span className="ml-1 font-medium text-black">
                 {price.amount}
               </span>
             </span>

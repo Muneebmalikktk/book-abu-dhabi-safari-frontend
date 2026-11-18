@@ -1,4 +1,4 @@
-import Evening_Desert_Safari_Abu_Dhabi from "../assets/images/Evening_Desert_Safari_Abu_Dhabi.png";
+import Evening_Desert_Safari_Abu_Dhabi from "../assets/images/Evening_Desert_Safari_Abu_Dhabi.jpg";
 import Luxury_Desert_Safari_Abu_Dhabi from "../assets/images/Luxury_Desert_Safari_Abu_Dhabi.webp";
 import Desert_Safari_with_Quad_Bike from "../assets/images/Desert_Safari_with_Quad_Bike.webp";
 import Private_Desert_Safari_Abu_Dhabi from "../assets/images/Private_Desert_Safari_Abu_Dhabi.webp";
@@ -15,7 +15,7 @@ import Morning_Desert_Safari_with_Quad_Bike from "../assets/images/morning-quad-
 import Private_Morning_Desert_Safari from "../assets/images/Private_Morning_Desert_Safari.webp";
 
 const eveningFeatures = [
-  "Pickup and drop-off from designated meeting points",
+  "Pickup and drop-off from your location",
   "Dune bashing in a 4x4 vehicle",
   "Camel ride and sandboarding",
   "Unlimited soft drinks",
@@ -26,7 +26,7 @@ const eveningFeatures = [
 ];
 
 const privateEveningFeatures = [
-  "Private pickup and drop-off from your location",
+  "Pickup and drop-off from your location",
   ...eveningFeatures.slice(1),
 ];
 
