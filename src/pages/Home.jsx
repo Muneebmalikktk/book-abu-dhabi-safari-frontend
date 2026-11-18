@@ -53,8 +53,8 @@ export default function Home() {
         <WhyChooseUs />
         <Testimonials />
         <BookingForm />
-        {/* <CallButton/>
-        <WhatsAppButton /> */}
+        <CallButton/>
+        <WhatsAppButton />
       </main>
 
       <Footer />
