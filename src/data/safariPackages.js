@@ -1,18 +1,18 @@
-import eveningImage from "../assets/images/pk1.jpg";
-import luxuryImage from "../assets/images/pkg2.jpg";
-import quadImage from "../assets/images/pkg3.jpg";
-import privateImage from "../assets/images/pkg4.jpg";
-import vipImage from "../assets/images/pkg5.jpg";
-import overnightImage from "../assets/images/pkg7.jpg";
-import vipQuadImage from "../assets/images/pkg6.jpg";
-import privateAtvVipImage from "../assets/images/pkg8.jpg";
-import buggyImage from "../assets/images/dune-buggy.webp";
-import oneSeaterBuggyImage from "../assets/images/one-seater-buggy.webp";
-import twoSeaterBuggyImage from "../assets/images/two-seater-buggy.webp";
-import fourSeaterBuggyImage from "../assets/images/four-seater-buggy.webp";
-import morningImage from "../assets/images/pkg2.jpg";
-import morningQuadImage from "../assets/images/morning-quad-bike.webp";
-import privateMorningImage from "../assets/images/pkg15.jpg";
+import Evening_Desert_Safari_Abu_Dhabi from "../assets/images/Evening_Desert_Safari_Abu_Dhabi.png";
+import Luxury_Desert_Safari_Abu_Dhabi from "../assets/images/Luxury_Desert_Safari_Abu_Dhabi.webp";
+import Desert_Safari_with_Quad_Bike from "../assets/images/Desert_Safari_with_Quad_Bike.webp";
+import Private_Desert_Safari_Abu_Dhabi from "../assets/images/Private_Desert_Safari_Abu_Dhabi.webp";
+import VIP_Desert_Safari_Abu_Dhabi from "../assets/images/VIP_Desert_Safari_Abu_Dhabi.webp";
+import VIP_Desert_Safari_with_Quad_Bike from "../assets/images/VIP_Desert_Safari_with_Quad_Bike.webp";
+import Overnight_Desert_Safari from "../assets/images/Overnight_Desert_Safari.webp";
+import Private_Safari_with_ATV_and_VIP_Service from "../assets/images/Private_Safari_with_ATV_and_VIP_Service.webp";
+import Private_Safari_with_Dune_Buggy from "../assets/images/Private_Safari_with_Dune_Buggy.png";
+import _1_Seater_Dune_Buggy from "../assets/images/_1_Seater_Dune_Buggy.webp";
+import _2_Seater_Dune_Buggy from "../assets/images/_2_Seater_Dune_Buggy.webp";
+import _4_Seater_Dune_Buggy from "../assets/images/_4_Seater_Dune_Buggy.webp";
+import Morning_Desert_Safari from "../assets/images/Morning_Desert_Safari.webp";
+import Morning_Desert_Safari_with_Quad_Bike from "../assets/images/morning-quad-bike.webp";
+import Private_Morning_Desert_Safari from "../assets/images/Private_Morning_Desert_Safari.webp";
 
 const eveningFeatures = [
   "Pickup and drop-off from designated meeting points",
@@ -43,7 +43,7 @@ export const safariPackages = [
   {
     id: "evening-desert-safari",
     title: "Evening Desert Safari Abu Dhabi",
-    image: eveningImage,
+    image: Evening_Desert_Safari_Abu_Dhabi,
     prices: [
       { label: "Child", amount: "65 AED" },
       { label: "Adult", amount: "75 AED" },
@@ -53,14 +53,14 @@ export const safariPackages = [
   {
     id: "luxury-desert-safari",
     title: "Luxury Desert Safari Abu Dhabi",
-    image: luxuryImage,
+    image: Luxury_Desert_Safari_Abu_Dhabi,
     prices: [{ label: "Per person", amount: "150 AED" }],
     features: privateEveningFeatures,
   },
   {
     id: "desert-safari-quad-bike",
     title: "Desert Safari with Quad Bike",
-    image: quadImage,
+    image: Desert_Safari_with_Quad_Bike,
     prices: [{ label: "Per person", amount: "200 AED" }],
     features: [
       ...privateEveningFeatures.slice(0, 3),
@@ -71,14 +71,14 @@ export const safariPackages = [
   {
     id: "private-desert-safari",
     title: "Private Desert Safari Abu Dhabi",
-    image: privateImage,
+    image: Private_Desert_Safari_Abu_Dhabi,
     prices: [{ label: "Up to 6 guests", amount: "900 AED" }],
     features: privateEveningFeatures,
   },
   {
     id: "vip-desert-safari",
     title: "VIP Desert Safari Abu Dhabi",
-    image: vipImage,
+    image: VIP_Desert_Safari_Abu_Dhabi,
     prices: [{ label: "Per person", amount: "175 AED" }],
     features: [
       ...privateEveningFeatures,
@@ -89,7 +89,7 @@ export const safariPackages = [
   {
     id: "vip-desert-safari-quad-bike",
     title: "VIP Desert Safari with Quad Bike",
-    image: vipQuadImage,
+    image: VIP_Desert_Safari_with_Quad_Bike,
     prices: [{ label: "Per person", amount: "275 AED" }],
     features: [
       ...privateEveningFeatures.slice(0, 3),
@@ -102,7 +102,7 @@ export const safariPackages = [
   {
     id: "overnight-desert-safari",
     title: "Overnight Desert Safari",
-    image: overnightImage,
+    image: Overnight_Desert_Safari,
     prices: [{ label: "Per person", amount: "400 AED" }],
     features: [
       ...privateEveningFeatures,
@@ -113,7 +113,7 @@ export const safariPackages = [
   {
     id: "private-safari-atv-vip",
     title: "Private Safari with ATV and VIP Service",
-    image: privateAtvVipImage,
+    image: Private_Safari_with_ATV_and_VIP_Service,
     prices: [{ label: "Up to 6 guests", amount: "2,000 AED" }],
     features: [
       ...privateEveningFeatures.slice(0, 3),
@@ -126,7 +126,7 @@ export const safariPackages = [
   {
     id: "private-safari-dune-buggy",
     title: "Private Safari with Dune Buggy",
-    image: buggyImage,
+    image: Private_Safari_with_Dune_Buggy,
     prices: [{ label: "Up to 6 guests", amount: "3,000 AED" }],
     features: [
       ...privateEveningFeatures.slice(0, 3),
@@ -137,7 +137,7 @@ export const safariPackages = [
   {
     id: "one-seater-dune-buggy",
     title: "1-Seater Dune Buggy",
-    image: oneSeaterBuggyImage,
+    image: _1_Seater_Dune_Buggy,
     prices: [{ label: "One rider", amount: "600 AED" }],
     features: [
       ...privateEveningFeatures.slice(0, 3),
@@ -148,7 +148,7 @@ export const safariPackages = [
   {
     id: "two-seater-dune-buggy",
     title: "2-Seater Dune Buggy",
-    image: twoSeaterBuggyImage,
+    image: _2_Seater_Dune_Buggy,
     prices: [{ label: "Two guests", amount: "800 AED" }],
     features: [
       ...privateEveningFeatures.slice(0, 3),
@@ -159,7 +159,7 @@ export const safariPackages = [
   {
     id: "four-seater-dune-buggy",
     title: "4-Seater Dune Buggy",
-    image: fourSeaterBuggyImage,
+    image: _4_Seater_Dune_Buggy,
     prices: [{ label: "Four guests", amount: "1,000 AED" }],
     features: [
       ...privateEveningFeatures.slice(0, 3),
@@ -170,14 +170,14 @@ export const safariPackages = [
   {
     id: "morning-desert-safari",
     title: "Morning Desert Safari",
-    image: morningImage,
+    image: Morning_Desert_Safari,
     prices: [{ label: "Per person", amount: "300 AED" }],
     features: morningFeatures,
   },
   {
     id: "morning-desert-safari-quad-bike",
     title: "Morning Desert Safari with Quad Bike",
-    image: morningQuadImage,
+    image: Morning_Desert_Safari_with_Quad_Bike,
     prices: [{ label: "Per person", amount: "400 AED" }],
     features: [
       ...morningFeatures.slice(0, 3),
@@ -188,7 +188,7 @@ export const safariPackages = [
   {
     id: "private-morning-desert-safari",
     title: "Private Morning Desert Safari",
-    image: privateMorningImage,
+    image: Private_Morning_Desert_Safari,
     prices: [{ label: "Up to 6 guests", amount: "1,000 AED" }],
     features: morningFeatures,
   },
