@@ -12,7 +12,7 @@ import twoSeaterBuggyImage from "../assets/images/two-seater-buggy.webp";
 import fourSeaterBuggyImage from "../assets/images/four-seater-buggy.webp";
 import morningImage from "../assets/images/pkg2.jpg";
 import morningQuadImage from "../assets/images/morning-quad-bike.webp";
-import privateMorningImage from "../assets/images/pkg5.jpg";
+import privateMorningImage from "../assets/images/pkg15.jpg";
 
 const eveningFeatures = [
   "Pickup and drop-off from designated meeting points",
